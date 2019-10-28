@@ -1,0 +1,98 @@
+.inblock{
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+}
+
+.triangle1{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid red;
+    z-index: 50;
+    top: 2px;
+    animation: rotate1 2s;
+    left: 2px;
+    
+}
+
+.block{
+    position: absolute;
+    left: 600px;
+    top: 200px;
+} 
+
+.triangle2{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid red;
+    z-index: 50;
+    left: 120px;
+    top: 2px;
+    animation: rotate2 2s;
+}
+
+.triangle3{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid red;
+    z-index: 50;
+    left: 60px;
+    top: 127px;
+    animation: rotate3 2s;
+}
+
+@keyframes rotate1{
+    from{
+        left: 0px;
+        top: 0px;
+        transform: rotate(0deg);
+    }
+    to{
+        left: 50px;
+        top:50px;
+        transform: rotate(362deg);
+        
+     
+    } 
+}
+
+@keyframes rotate2{
+    from{
+        left: 99px;
+        top: 1px;
+        transform: rotate(0deg);
+    }
+    to{
+        left: 75px;
+        top:50px;
+        transform: rotate(360deg);
+        
+     
+    } 
+}
+  
+
+@keyframes rotate3{
+    from{
+        left: 50px;
+        top: 99px;
+        transform: rotate(0deg);
+    }
+    to{
+        left: 60px;
+        top:75px;
+        transform: rotate(359deg);
+        
+     
+    } 
+}
+  
